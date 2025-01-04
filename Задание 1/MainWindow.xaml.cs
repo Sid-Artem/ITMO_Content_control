@@ -140,5 +140,10 @@ namespace Задание_1
                 textBox.Text=File.ReadAllText(openFileDialog.FileName);
             }
         }
+
+        private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+
+        }
     }
 }
