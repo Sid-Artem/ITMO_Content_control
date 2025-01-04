@@ -29,7 +29,7 @@ namespace Задание_1
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string fontname=((sender as ComboBox).SelectedItem as TextBlock).Text;
+            string fontname=((sender as ComboBox).SelectedItem as string);
             if (textBox != null) 
             { 
                 textBox.FontFamily=new FontFamily(fontname);
@@ -39,7 +39,7 @@ namespace Задание_1
 
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
-            double fontsize = Convert.ToDouble(((sender as ComboBox).SelectedItem as TextBlock).Text);
+            double fontsize = Convert.ToDouble(((sender as ComboBox).SelectedItem as string));
            
             if (textBox != null)
             {
